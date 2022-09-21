@@ -1147,9 +1147,12 @@ body.bridge_81.fixed {
     .bridge_81 .productsBox {
         padding: 20px 0 30px;
     }
+    .bridge_81 .jsInner {
+        margin: 0 16px;
+    }
     .bridge_81 .productsBox .ttl {
         padding: 8px 10px 10px; 
-        margin: 0 16px;
+        margin: 0;
     }
     .bridge_81 .productsBox .ttl span {
         background-image: url("../img/common/icon09.png");
@@ -1268,8 +1271,8 @@ body.bridge_81.fixed {
     }
     .bridge_81 .jsBox {
         display: none;
-        left: 16px;
-        right: 16px;
+        left: 0;
+        right: 0;
         width: auto;
         padding: 16px 11px 5px;
     }
@@ -1356,7 +1359,7 @@ body.bridge_81.fixed {
 .bridge_81 .detailBox .ec-layoutRole__contents {
     padding-top: 0;
 }
-.bridge_81 .item_visual .fooUl li {
+.bridge_81 .item_visual .slick-list li {
     float: left;
     width: 100%;
     height: 100%;
@@ -1716,14 +1719,18 @@ body.bridge_81.fixed {
     }
     .bridge_81 .detailBox .ec-sliderItemRole {
         padding: 0;
-        margin-bottom: 13px;
+        margin-bottom: 30px;
     }
     .bridge_81 .detailBox .ec-productRole {
         padding: 0 15px;
     }
     .bridge_81 .ec-sliderItemRole .item_visual {
         width: 100%;
+        position: relative;
         height: 66.7vw;
+    }
+    .bridge_81 .ec-sliderItemRole .item_visual .slick-dots {
+        bottom: -25px;
     }
     .bridge_81 .item_visual .fooUl li img {
         max-height: 48.3vw;
@@ -4398,7 +4405,7 @@ body.bridge_81.fixed {
 .bridge_81_index .mainImg .fooUl li img {
     width: 100%;
 }
-.bridge_81_index .slick-dots {
+.slick-dots {
     position: absolute;
     bottom: -18px;
     left: 0;
@@ -4406,7 +4413,7 @@ body.bridge_81.fixed {
     text-align: center;
     z-index: 10;
 }
-.bridge_81_index .slick-dots li {
+.slick-dots li {
     cursor: pointer;
 	margin: 0 5px;
 	display: inline-block;
@@ -4415,10 +4422,10 @@ body.bridge_81.fixed {
 	border-radius: 100px;
 	background-color: #E1E1E1;
 }
-.bridge_81_index .slick-dots li button {
+.slick-dots li button {
 	display: none;
 }
-.bridge_81_index .slick-dots li.slick-active {
+.slick-dots li.slick-active {
 	background-color: #9D9D9D;
 }
 .bridge_81_index .mainImg .subBox {
@@ -4820,7 +4827,7 @@ body.bridge_81.fixed {
         width: auto;
         margin: 0 2px;
     }
-    .bridge_81_index .slick-dots {
+    .slick-dots {
         bottom: -21px;
     }
     .bridge_81_index .mainImg .subBox {

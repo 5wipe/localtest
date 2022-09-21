@@ -565,11 +565,13 @@
         $('.bridge_81_guideUl li a').matchHeight();
         $('.bridge_81 .ec-shelfGrid .sub').matchHeight();
         
-        $(".bridge_81_ideal .list li .ttl").click(function(){
-            $(this).toggleClass("on");
-            $(this).next(".subUl").stop().slideToggle(300);
-            return false;
-        });
+        if(window.innerWidth < 768){
+            $(".bridge_81_ideal .list li .ttl").click(function(){
+                $(this).toggleClass("on");
+                $(this).next(".subUl").stop().slideToggle(300);
+                return false;
+            });
+        }
         
         $('.bridge_81 .ec-shelfGrid .ec-shelfGrid__item .heart').click(function(){
             $(this).parents('a').toggleClass("on");

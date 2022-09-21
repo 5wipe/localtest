@@ -706,16 +706,26 @@
             return false;
         });
         
-        $(".bridge_81 .jsDl dt").click(function(){
-            $(this).toggleClass("on");
-            $(this).next("dd").stop().slideToggle(300);
-            return false;
-        });
+        if(window.innerWidth < 768){
+            $(".bridge_81 .jsDl dt").click(function(){
+                $(this).toggleClass("on");
+                $(this).next("dd").stop().slideToggle(300);
+                return false;
+            });
+        }
         
         $('.bridge_81 .ec-shelfGrid .ec-shelfGrid__item .heart').click(function(){
             $(this).parents('a').toggleClass("on");
 			return false;
 		});
+        
+        
+        $(document).on('click', function(evt){
+            if( !$(evt.target).closest($(".bridge_81 .jsInner")).length && !$(evt.target).closest($("a")).length ){
+                $('.bridge_81 .jsBox:visible').slideUp();
+                $('.bridge_81 .productsBox .ttl').removeClass('on');
+            }
+        });
     });
 </script>
 </body>
