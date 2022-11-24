@@ -1,9 +1,6 @@
-window.onunload = function () {};
-window.onpageshow = function (event) { if (event.persisted) window.location.reload() }; // for safari
-
-var ua = navigator.userAgent.toLowerCase();
-if((ua.indexOf('iphone') != -1) || (ua.indexOf('android') != -1) && (ua.indexOf('mobile') != -1) && (ua.indexOf('sc-01c') == -1)) {
-        document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">');
-} else if (ua.indexOf('ipad') != -1) {
-        document.write('<meta name="viewport" content="width=1100, user-scalable=no">');
+if(((navigator.userAgent.indexOf('iPhone') > 0) || (navigator.userAgent.indexOf('Android') > 0) && (navigator.userAgent.indexOf('Mobile') > 0) && (navigator.userAgent.indexOf('SC-01C') == -1))){
+    var meta = document.createElement('meta');
+    meta.setAttribute('name', 'viewport');
+    meta.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no');
+    document.getElementsByTagName('head')[0].appendChild(meta);
 }

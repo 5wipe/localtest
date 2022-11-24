@@ -1,0 +1,429 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	index
+------------------------------------------------------------*/
+#main {
+	padding-bottom: 80px;
+}
+#main .inner {
+	padding: 35px 0 31px;
+}
+#main .inner .pTop {
+	margin-bottom: 31px;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+#main .inner .btnList {
+	margin-bottom: 20px;
+}
+#main .inner .btnList li {
+	width: 49.1%;
+}
+#main .inner .btnList li input[type="file"] {
+	display: none
+}
+#main .inner .btnList li input[type="file"] + span {
+    padding: 2px 0 2px 32px;
+	text-align: left;
+    background: url("../img/common/icon01.png") no-repeat left center / 22px;
+}
+#main .inner .btnList li label,
+#main .inner .btnList li a {
+	padding: 24px 10px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #0070C0;
+	box-sizing: border-box;
+}
+#main .inner .btnList li a:hover {
+	opacity: 0.7;
+}
+#main .inner .btnList li a span {
+	padding: 2px 0 2px 32px;
+	background: url("../img/common/icon01.png") no-repeat left center / 22px;
+}
+#main .inner .btnList li:last-child a span {
+	background-image: url("../img/common/icon02.png");
+	background-size: 24px auto;
+}
+#main .inner .errorBox {
+	margin-bottom: 20px;
+	padding: 5px 20px;
+	min-height: 60px;
+	display: flex;
+	align-items: center;
+	background: #FAE0DE;
+	border: 1px solid #B04940;
+	border-radius: 4px;
+	box-sizing: border-box;
+	border-left-width: 5px;
+}
+#main .inner .errorBox p {
+	padding: 4px 0 4px 36px;
+	color: #B04940;
+	font-weight: 500;
+	line-height: 1.25;
+	background: url("../img/common/icon03.png") no-repeat left center / 25px;
+}
+#main .inner .photo {
+	margin: 0 auto;
+	width: 220px;
+}
+#main .inner .photo .subPho {
+	margin-bottom: 7px;
+}
+#main .inner .photo p {
+	color: #000;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: 400;
+}
+#main .inner02 .pTop {
+	margin-bottom: 19px;
+}
+#main .inner02 .white {
+	margin-bottom: 12px;
+}
+#main .inner02 .numBox {
+	margin-bottom: 7px;
+}
+#main .inner02 .numBox select,
+#main .inner02 .numBox input {
+	padding: 10px 30px;
+	width: 29%;
+	height: 72px;
+	font-size: 2rem;
+	color: #000;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	box-shadow: none;
+	border: 1px solid #B0BACA;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background-color: #FAFAFA;
+}
+#main .inner02 .numBox select {
+	background: url("../img/common/icon05.png") no-repeat right 14px center / 21px;
+}
+#main .inner02 .numBox .wid01 {
+	width: 36.2%;
+}
+#main .inner02 .numBox .error {
+	background-color: #FAE0DE;
+	border-color: #B04940
+}
+#main .inner02 .note {
+	margin-bottom: 27px;
+	color: #7C7C7C;
+	font-size: 1.4rem;
+}
+#main .inner03 .headLine02 {
+	margin-bottom: 31px;
+}
+#main .inner03 .title {
+	padding: 10px 33px;
+	color: #fff;
+	font-weight: 700;
+	background-color: #56A2D9;
+}
+#main .inner03 .info .comNumList {
+	margin-bottom: 32px;
+}
+#main .inner03 .info .comNumList li .del {
+	width: 20px;
+	display: block;
+	position: absolute;
+	right: 31px;
+	top: 7px;
+	color: #B04940;
+	font-size: 1rem;
+	text-align: center;
+	cursor: pointer;
+}
+#main .inner03 .info .comNumList li .del .icon {
+	width: 18px;
+	display: block;
+}
+#main .inner03 .info .text {
+	margin-bottom: 7px;
+	text-align: center;
+	color: #000;
+	font-weight: 700;
+}
+#main .inner03 .comLink {
+	margin-bottom: 72px;
+}
+#main .inner03 .comLink.grey a {
+	background-color: #B0BACA;
+}
+#main .inner03 .numInner .title {
+	cursor: pointer;
+	background: #044879 url("../img/common/icon08.png") no-repeat right 32px center / 14px;
+}
+#main .inner03 .numInner .title.on {
+	background-image: url("../img/common/icon07.png")
+}
+#main .inner03 .numInner .comNumList {
+	display: none;
+}
+#main .inner03 .numInner .comNumList li {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#main .inner03 .numInner .comNumList li .date {
+	width: 120px;
+	display: block;
+	font-size: 1.4rem;
+}
+#main .inner03 .numInner .comNumList li .num {
+	display: block;
+	width: calc(100% - 130px);
+}
+#main .inner03 .numInner .comNumList li:nth-child(2n) {
+	background-color: #91CAF2;
+}
+.practice #main .inner03 .comLink {
+	margin-bottom: 4px;
+}
+.practice #main .inner03 .note {
+	margin-bottom: 25px;
+	color: #B04940;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.practice #main .inner03 .note01 {
+	margin-bottom: 59px;
+}
+.practice #main .inner03 .headLine02 {
+	margin-bottom: 4px;
+}
+.practice #main .inner .btnList li label,
+.practice #main .inner .btnList li a {
+	background-color: #E50E63;
+}
+.practice #main .comLink01 a {
+	background-color: #E50E63;
+}
+.pop {
+	margin: 0 auto;
+	width: 72%;
+	padding: 20px 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+.pop .comLinkList {
+	margin: 0;
+}
+.pop p {
+	margin-bottom: 20px;
+	padding-left: 59px;
+	color: #000;
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.36;
+	background: url("../img/common/icon09.png") no-repeat left 20px top 6px / 25px;
+}
+.pop .comLinkList li {
+	width: 48.5%;
+}
+.pop .comLinkList li:last-child a {
+	padding: 14px 10px;
+	font-size: 1.6rem;
+}
+@media all and (min-width: 1024px) {
+	#main .inner .btnList li label,
+	#main .inner .btnList li a {
+		padding: 23px 10px 19px;
+		font-size: 2rem;
+	}
+	#main .inner .btnList li input[type="file"] + span  {
+		padding: 2px 0 2px 36px;
+		background-size: 25px auto;
+	}
+	#main .inner .btnList li:last-child a span {
+		padding: 2px 0 2px 36px;
+		background-size: 27px auto;
+	}
+	#main .inner .photo .subPho {
+		margin-bottom: 11px;
+	}
+	#main .inner02 .white {
+		margin-bottom: 16px;
+	}
+	#main .inner02 .numBox {
+		margin-bottom: 15px;
+	}
+}
+@media all and (max-width: 767px) {
+	#main {
+		padding-bottom: 40px;
+	}
+	#main .inner {
+		padding: 28px 0 25px;
+	}
+	#main .inner .pTop {
+		margin-bottom: 26px;
+		font-size: 1.2rem;
+	}
+	#main .inner .btnList {
+		margin-bottom: 16px;
+	}
+	#main .inner .btnList li label,
+	#main .inner .btnList li a {
+		padding: 5px 8px;
+		font-size: 1.4rem;
+		min-height: 52px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		line-height: 1.14;
+	}
+	#main .inner .btnList li a span {
+		padding: 2px 0 2px 32px;
+		background-size: 20px auto;
+		text-align: left;
+	}
+	#main .inner .btnList li:first-child a {
+		justify-content: center;
+	}
+	#main .inner .btnList li:last-child a span {
+		background-size: 22px auto;
+	}
+	#main .inner .errorBox {
+		margin-bottom: 16px;
+		padding: 5px 17px;
+		min-height: 52px;
+		border-left-width: 4px;
+	}
+	#main .inner .errorBox p {
+		padding: 4px 0 4px 32px;
+		line-height: 1.33;
+		font-size: 1.2rem;
+		background-size: 22px auto;
+	}
+	#main .inner .photo {
+		width: auto;
+	}
+	#main .inner .photo .subPho {
+		margin: 0 auto 9px;
+		width: 49%;
+	}
+	#main .inner .photo p {
+		font-size: 1.2rem;
+	}
+	#main .inner02 .pTop {
+		margin-bottom: 26px;
+	}
+	#main .inner02 .white {
+		margin-bottom: 8px;
+	}
+	#main .inner02 .white a {
+		padding: 16px 15px 15px;
+		font-size: 1.4rem;
+	}
+	#main .inner02 .numBox {
+		margin-bottom: 4px;
+	}
+	#main .inner02 .numBox select,
+	#main .inner02 .numBox input {
+		padding: 10px 25px 10px 10px;
+		width: 30%;
+		height: 52px;
+		font-size: 1.6rem;
+	}
+	#main .inner02 .numBox select {
+		background-size: 14px auto;
+		background-position: right 8px center;
+	}
+	#main .inner02 .numBox .wid01 {
+		width: 35.3%;
+	}
+	#main .inner02 .note {
+		margin-bottom: 26px;
+		font-size: 1.2rem;
+	}
+	#main .inner03 .headLine02 {
+		margin-bottom: 27px;
+	}
+	#main .inner03 .title {
+		padding: 11px 12px 12px;
+	}
+	#main .inner03 .info .comNumList {
+		margin-bottom: 28px;
+	}
+	#main .inner03 .info .comNumList li .del {
+		width: 20px;
+		right: 14px;
+		top: 10px;
+	}
+	#main .inner03 .info .comNumList li .del .icon {
+		margin: 0 auto;
+		width: 16px;
+	}
+	#main .inner03 .comLink {
+		margin-bottom: 60px;
+	}
+	#main .inner03 .numInner .title {
+		background-position: right 14px center;
+	}
+	#main .inner03 .numInner .comNumList li .date {
+		margin-top: 2px;
+		width: 100px;
+		font-size: 1.2rem;
+	}
+	#main .inner03 .numInner .comNumList li .num {
+		display: block;
+		width: calc(100% - 114px);
+	}
+	.pop {
+		width: auto;
+		margin: 0 30px;
+	}
+}
+#cookie {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 26, 110, 0.4);
+}
+#upload,
+#delPop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9000;
+	display: none;
+	background-color:  rgba(0, 0, 0, 0.6);
+}
+#upload .popBox,
+#delPop .popBox {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#upload .popBox.finish,
+#upload .popBox.change,
+#delPop .popBox.finish {
+	display: none;
+}
