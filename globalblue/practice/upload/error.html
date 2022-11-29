@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/photo.css">
+</head>
+<body>
+<div id="container">
+    <main id="main" role="main">
+        <section>
+			<h2 class="headLine03">エラー</h2>
+			<div class="bg bg01">
+				<div class="photo"><img src="../../img/photo/img01.png" alt=""></div>
+			</div>
+			<div class="btmBox">
+				<div class="subContent">
+					<p>規定の画素数以上（388万画素）の<br>
+						データを選択してください。</p>
+					<div class="comBtn"><a href="#">撮影をやり直す</a></div>
+				</div>
+			</div>
+		</section>
+    </main>
+</div>
+<script src="../../js/jquery.min.js"></script> 
+<script src="../../js/common.js"></script>
+<script>
+	$(function(){
+		$("#main .inner03 .numInner .title").click(function(){
+			$(this).toggleClass("on").next().stop().slideToggle(300);
+		});
+	});
+</script>
+</body>
+</html>

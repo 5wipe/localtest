@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body class="practice">
+<div id="loading">
+	<div class="logo"><img src="../img/common/loading.png" alt="Global Blue"></div>
+</div>
+<div id="container">
+    <header id="gHeader">
+		<h1><a href="./"><img src="../img/common/logo.png" alt="Global Blue"></a></h1>
+		<div class="menu"><span></span><span></span><span></span></div>
+	</header>
+	<div class="menuBox">
+		<ul class="naviList">
+			<li><a href="#">クリア</a></li>
+			<li><a href="#">キャッシュクリア</a></li>
+			<li><a href="../">本番モードに切替</a></li>
+			<li><a href="#">アプリ終了</a></li>
+		</ul>
+	</div>
+    <main id="main" role="main">
+        <section class="inner">
+			<div class="content">
+				<h2 class="headLine01"><span class="en">STEP1</span></h2>
+				<section class="subContent">
+					<h3 class="headLine02">アップロードする書類を撮影してください</h3>
+					<p class="pTop">※写真データを選択することも可能です。</p>
+					<ul class="btnList flexB">
+						<li><label><input type="file" capture><span>写真を撮影する</span></label></li>
+						<li><a href="#"><span>カメラロールから選択する</span></a></li>
+					</ul>
+					<div class="errorBox">
+						<p>規定の拡張子（jpg形式、png形式、HEIF形式）の<br class="pc">データを選択してください。</p>
+					</div>
+					<div class="photo">
+						<div class="subPho"><img src="../img/index/photo01.png" alt=""></div>
+						<p>写真をアップロード：未選択</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="inner inner02">
+			<div class="content">
+				<h2 class="headLine01"><span class="en">STEP2</span></h2>
+				<section class="subContent">
+					<h3 class="headLine02">伝票番号（DocID）を入力してください</h3>
+					<p class="pTop">※伝票番号（DocID）は複数追加することも可能です。</p>
+					<div class="errorBox">
+						<p>半角数字のみ入力可能です。</p>
+					</div>
+					<div class="comLink white"><a href="#"><span>カメラで伝票番号を読み取る</span></a></div>
+					<div class="numBox flexB">
+						<input type="num" value="" name="num01" class="error wid02" placeholder="あ23456">
+						<input type="num" value="" name="num02" class="error wid02" placeholder="12345">
+						<input type="num" value="" name="num03" class="error wid01" placeholder="123456789">
+					</div>
+					<p class="note">※直接入力も可能です。</p>
+					<div class="comLink comLink01"><a href="#">伝票番号を追加</a></div>
+				</section>
+			</div>
+		</section>
+		<section class="inner inner03">
+			<div class="content">
+				<h2 class="headLine01"><span class="en">STEP3</span></h2>
+				<section class="subContent">
+					<h3 class="headLine02">アップロードを完了してください。</h3>
+					<p class="note">※練習モード中のため実際にアップロードはされません。</p>
+					<div class="info">
+						<p class="title">アップロード待機中　伝票番号一覧</p>
+						<ul class="comNumList">
+							<li>123456 12345 123456789<span class="del"><span class="icon"><img src="../img/common/icon06.png" alt=""></span>削除</span></li>
+							<li>123456 12345 123456789<span class="del"><span class="icon"><img src="../img/common/icon06.png" alt=""></span>削除</span></li>
+							<li>123456 12345 123456789<span class="del"><span class="icon"><img src="../img/common/icon06.png" alt=""></span>削除</span></li>
+							<li>123456 12345 123456789<span class="del"><span class="icon"><img src="../img/common/icon06.png" alt=""></span>削除</span></li>
+						</ul>
+						<p class="text">アップロード件数：4件</p>
+						<div class="comLink on"><a href="#">アップロード</a></div>
+						<p class="note note01">※練習モード中のため実際にアップロードはされません。</p>
+					</div>
+					<div class="numInner">
+						<p class="title">アップロード済　伝票番号一覧</p>
+						<ul class="comNumList">
+							<li><span class="date">2022/10/31 23:59</span><span class="num">123456 12345 123456789</span></li>
+							<li><span class="date">2022/10/31 23:59</span><span class="num">123456 12345 123456789</span></li>
+							<li><span class="date">2022/10/31 23:59</span><span class="num">123456 12345 123456789</span></li>
+							<li><span class="date">2022/10/31 23:59</span><span class="num">123456 12345 123456789</span></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+    </main>
+	<div id="delPop">
+		<div class="popBox confirm">
+			<p class="title">確認</p>
+			<div class="whiteBg">
+				<p>以下の伝票番号を<br>
+					削除してもよろしいですか？</p>
+				<p class="num">123456 12345 123456789</p>
+				<ul class="comLinkList flexB">
+					<li class="cancel"><a href="#">キャンセル</a></li>
+					<li class="next"><a href="#">OK</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="popBox finish">
+			<p class="title">完了</p>
+			<div class="whiteBg">
+				<p>以下の伝票番号を削除しました。</p>
+				<p class="num">123456 12345 123456789</p>
+				<div class="comBtn grey"><a class="closePop" href="#">閉じる</a></div>
+			</div>
+		</div>
+	</div>
+	<div id="upload">
+		<div class="popBox popBox01 confirm">
+			<p class="title">最終確認</p>
+			<div class="whiteBg">
+				<p>アップロードしてもよろしいですか？</p>
+				<div class="photoBox">
+					<div class="photo"><img src="../img/index/photo01.png" alt=""></div>
+					<ul class="numList">
+						<li>123456 12345 123456789</li>
+						<li>123456 12345 123456789</li>
+						<li>123456 12345 123456789</li>
+						<li>123456 12345 123456789</li>
+						<li>123456 12345 123456789</li>
+					</ul>
+					<p class="blueTxt"><span>他XX件</span></p>
+				</div>
+				<ul class="comLinkList flexB">
+					<li class="cancel"><a href="#">キャンセル</a></li>
+					<li class="finish"><a href="#">OK</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="popBox change">
+			<p class="title">伝票番号一覧</p>
+			<div class="whiteBg">
+				<ul class="numList">
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+					<li>123456 12345 123456789</li>
+				</ul>
+				<div class="comBtn grey back"><a href="#">戻る</a></div>
+			</div>
+		</div>
+		<div class="popBox finish">
+			<p class="title">アップロード完了</p>
+			<div class="whiteBg">
+				<p>選択した写真データは削除されません。必要に応じて端末から削除してください。</p>
+				<div class="comBtn grey"><a href="#" class="closePop">閉じる</a></div>
+			</div>
+		</div>
+	</div>
+	<div id="cookie">
+		<div class="pop">
+			<p>当サイトはクッキー（Cookie）を使用します。<br>
+			同意しない場合、履歴の表示等の一部の機能が動作しません。</p>
+			<ul class="comLinkList flexB">
+				<li><a href="#">拒否する</a></li>
+				<li><a href="#" class="agree">同意する</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>
